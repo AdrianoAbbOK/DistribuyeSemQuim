@@ -4,6 +4,8 @@ Script para distribuir los estudiantes en grupos para la semana de la química
 
 Este script en Google Colab permite distribuir estudiantes acreditados por escuela en distintos grupos de laboratorio para una jornada académica, respetando criterios de capacidad, equidad y agrupamiento.
 
+El código fuente se encuentra en el archivo `Script_Gen.py`.
+
 ## 🚀 Funcionalidades principales
 
 - ✅ **Distribución automática** de estudiantes en grupos, respetando capacidad máxima por grupo.
