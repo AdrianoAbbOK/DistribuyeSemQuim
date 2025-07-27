@@ -48,7 +48,12 @@ El resultado se exporta automáticamente a tu Google Sheet:
 2. Autenticá tu cuenta de Google.
 3. Indicá la URL de tu Google Sheet. Podés definir la variable de entorno
    `SHEET_URL` antes de ejecutar el script o ingresarla manualmente cuando se
-   te solicite.
+   te solicite. Si querés fijarla de antemano, ejecutá en una celda:
+
+   ```python
+   import os
+   os.environ["SHEET_URL"] = "https://mi-sheet.google.com/..."
+   ```
 4. Ejecutá todas las celdas.
 5. Revisá la hoja `Distribución python` con los resultados y el resumen.
 
