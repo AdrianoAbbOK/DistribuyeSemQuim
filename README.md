@@ -48,9 +48,10 @@ El resultado se exporta automáticamente a tu Google Sheet:
 
 1. Abrí el notebook en Google Colab.
 2. Autenticá tu cuenta de Google.
-3. Verificá que el enlace al Google Sheet sea correcto.
-4. Ejecutá todas las celdas.
-5. Revisá la hoja `Distribución python` con los resultados y el resumen.
+3. Instalá las dependencias ejecutando la primera celda de `Script_Gen.py` (que llama `!pip install --quiet gspread gspread-formatting pandas`) o corriendo directamente ese comando en Colab.
+4. Verificá que el enlace al Google Sheet sea correcto.
+5. Ejecutá todas las celdas.
+6. Revisá la hoja `Distribución python` con los resultados y el resumen.
 
 ## 🧾 Ejemplo de resumen en consola
 
