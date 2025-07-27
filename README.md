@@ -46,7 +46,9 @@ El resultado se exporta automáticamente a tu Google Sheet:
 
 1. Abrí el notebook en Google Colab.
 2. Autenticá tu cuenta de Google.
-3. Verificá que el enlace al Google Sheet sea correcto.
+3. Indicá la URL de tu Google Sheet. Podés definir la variable de entorno
+   `SHEET_URL` antes de ejecutar el script o ingresarla manualmente cuando se
+   te solicite.
 4. Ejecutá todas las celdas.
 5. Revisá la hoja `Distribución python` con los resultados y el resumen.
 
