@@ -1,13 +1,14 @@
 # ⬇️ INSTALAR LIBRERÍAS NECESARIAS
 !pip install --quiet gspread gspread-formatting pandas
-
 # 📚 IMPORTACIONES
 import gspread
 from google.colab import auth
 from google.auth import default
+import os
 import pandas as pd
+import math
 import copy
-import copy
+from itertools import zip_longest
 from collections import defaultdict
 
 # 🔐 AUTENTICACIÓN
@@ -16,7 +17,9 @@ creds, _ = default()
 gc = gspread.authorize(creds)
 
 # 📄 ABRIR PLANILLA
-sheet_url = "https://docs.google.com/spreadsheets/d/1uCuEVqUVc9ofHrpgzF2jq4jDIWr-kF33MxtZQLi0CCQ"
+sheet_url = os.environ.get("SHEET_URL")
+if not sheet_url:
+    sheet_url = input("🔗 Ingresá la URL del Google Sheet: ").strip()
 spreadsheet = gc.open_by_url(sheet_url)
 hoja_escuelas = spreadsheet.worksheet("Estudiantes acreditados")
 hoja_grupos = spreadsheet.worksheet("Asignación de Elementos y Coordinadores")
