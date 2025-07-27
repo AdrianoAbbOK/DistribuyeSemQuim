@@ -49,7 +49,13 @@ El resultado se exporta automáticamente a tu Google Sheet:
 1. Abrí el notebook en Google Colab.
 2. Autenticá tu cuenta de Google.
 3. Instalá las dependencias ejecutando la primera celda de `Script_Gen.py` (que llama `!pip install --quiet gspread gspread-formatting pandas`) o corriendo directamente ese comando en Colab.
-4. Verificá que el enlace al Google Sheet sea correcto.
+4. Indicá la URL de tu Google Sheet. Podés definir la variable de entorno
+   `SHEET_URL` antes de ejecutar el script o ingresarla manualmente cuando se
+   te solicite. Si querés fijarla de antemano, ejecutá en una celda:
+   ```python
+   import os
+   os.environ["SHEET_URL"] = "https://mi-sheet.google.com/..."
+   ```
 5. Ejecutá todas las celdas.
 6. Revisá la hoja `Distribución python` con los resultados y el resumen.
 
