@@ -6,9 +6,8 @@ import gspread
 from google.colab import auth
 from google.auth import default
 import pandas as pd
-import math
 import copy
-from itertools import zip_longest
+import copy
 from collections import defaultdict
 
 # 🔐 AUTENTICACIÓN
